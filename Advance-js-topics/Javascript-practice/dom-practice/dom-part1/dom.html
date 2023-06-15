@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All about Document Object Model</title>
+    <style>
+      .quote {
+        font-size: 1.2em;
+        font-style: italic;
+        background-color: #1ee;
+        padding: 0.5em;
+        border-radius: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName"
+        >Dom practice 1</a
+      >
+    </h1>
+
+    <p id="dom1"></p>
+    <!-- getelementbytagname +createElement -->
+    <ul id="blogs">
+      <li>Blog-1</li>
+      <li>Blog-2</li>
+      <li>Blog-3</li>
+      <li>Blog-4</li>
+    </ul>
+
+    <!-- book details -->
+    <section id="bookSection">
+      <h1>Book List</h1>
+      <article class="article">
+        <h2 class="book_title">Shoe Dog</h2>
+        <p>
+          Shoe Dog dolor sit amet consectetur adipisicing elit. Aperiam optio
+          placeat sint reprehenderit. Accusamus consequuntur sequi voluptatum
+          odio. Consequatur facilis non adipisci cupiditate reprehenderit
+          perferendis placeat porro beatae quam alias.
+        </p>
+      </article>
+      <article class="article">
+        <h2 class="book_title">Miracle Morning</h2>
+        <p>
+          Miracle dolor sit amet consectetur adipisicing elit. Aperiam optio
+          placeat sint reprehenderit. Accusamus consequuntur sequi voluptatum
+          odio. Consequatur facilis non adipisci cupiditate reprehenderit
+          perferendis placeat porro beatae quam alias.
+        </p>
+      </article>
+      <article class="article">
+        <h2 class="book_title">Elon Mask</h2>
+        <p>
+          Elon Mask ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          optio placeat sint reprehenderit. Accusamus consequuntur sequi
+          voluptatum odio. Consequatur facilis non adipisci cupiditate
+          reprehenderit perferendis placeat porro beatae quam alias.
+        </p>
+      </article>
+      <article class="article">
+        <h2 class="book_title">Think and grow rich</h2>
+        <p>
+          Think and grow rich dolor sit amet consectetur adipisicing elit.
+          Aperiam optio placeat sint reprehenderit. Accusamus consequuntur sequi
+          voluptatum odio. Consequatur facilis non adipisci cupiditate
+          reprehenderit perferendis placeat porro beatae quam alias.
+        </p>
+      </article>
+      <article class="article">
+        <h2 class="book_title">Atomic Habits</h2>
+        <p>
+          Atomic ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          optio placeat sint reprehenderit. Accusamus consequuntur sequi
+          voluptatum odio. Consequatur facilis non adipisci cupiditate
+          reprehenderit perferendis placeat porro beatae quam alias.
+        </p>
+      </article>
+      <button id="btn_design" onclick="addBook()">Add New Book</button>
+    </section>
+    <script src="./addnewElement.js"></script>
+    <script src="./dom1.js"></script>
+  </body>
+</html>

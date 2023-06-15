@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events exploring</title>
+  </head>
+  <body>
+    <!-- 1 -->
+    <h1 onclick="this.innerHTML='DOM EXPLORING'">DOM Event</h1>
+
+    <!-- 2 -->
+    <!-- SHOW DATE USING ONCLICK -->
+    <h1 id="date">Show date</h1>
+
+    <button onclick="showDate()">click to show date</button>
+
+    <!-- onchange example start -->
+    <br />
+    <br />
+    <input
+      type="text"
+      name=""
+      id=""
+      onchange="textChange(this.value)"
+      placeholder="enter your text "
+    />
+    <p id="ptext"></p>
+
+    <!-- onchange example end -->
+    <!-- The onmouseover and onmouseout Events start -->
+    <div
+      onmouseover="mouseOver(this)"
+      onmouseout="mouseOut(this)"
+      style="
+        background-color: #d94a38;
+        width: 120px;
+        height: 10px;
+        padding: 30px;
+      "
+    >
+      Mouse Over Me
+    </div>
+    <!-- The onmouseover and onmouseout Events end-->
+    <script>
+      const showDate = () => {
+        document.getElementById("date").innerHTML = Date();
+      };
+      const textChange = (val) => {
+        document.getElementById("ptext").innerHTML = "The input text is " + val;
+        console.log(val);
+      };
+
+//he onmousedown, onmouseup and onclick Events onmousedown and onmouseup /onload/onfocus/
+      //<!-- The onmouseover and onmouseout Events js start-->
+      const mouseOver = (para) => {
+        para.innerHTML = "Thanks for changing me";
+      };
+      const mouseOut = (para) => {
+        para.innerHTML = "Mouse Over Me";
+      };
+      // <!-- The onmouseover and onmouseout Events js end-->
+    </script>
+    <script src="./EventListener.js"></script>
+  </body>
+</html>

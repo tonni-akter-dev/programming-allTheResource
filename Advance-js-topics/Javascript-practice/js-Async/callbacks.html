@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callbacks</title>
+  </head>
+  <body>
+    <h2>callbacks</h2>
+    <p id="demo"></p>
+    <script>
+      const myNumbers = [10, 20, -30, 55, 8, -1];
+      const positiveNumbers =rmvnegnum (myNumbers, (x) => x >= 0);
+
+      document.getElementById("demo").innerHTML = positiveNumbers;
+      
+      function rmvnegnum(numbers, callback) {
+        const myArray = [];
+        for (const x of numbers) {
+          if (callback(x)) {
+            myArray.push(x);
+          }
+        }
+        return myArray;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+C/C++
+Database
+OS
+Digital Electronics
+Data com
+Networking
+Math
+Eng
+IQ
+Total 50 marks, mcq 30*1=30, written 10*2=20.
+
+
+Memory addressing
+logical operation
+circuit simplification
+truth table
+programming
+IEEE standards/name of technology (Bluetooth, wlan)
+networking
+small theory
+binary/decimal/octal conversion
+English grammar etc .
+
+
+https://www.indiabix.com/computer-science/questions-and-answers/
